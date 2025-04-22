@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --cream: #fdf6ec;
+      --brown: #7c4a2d;
+      --blue: #3498db;
+      --red: #e74c3c;
+      --yellow: #f39c12;
+    }
+
+    /* Container untuk seluruh about section */
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Menjaga konten agar rata tengah */
+    .content {
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Membuat grid horizontal untuk Education, Skills, dan Hobby */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      text-align: center;
+    }
+
+    .card .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--brown);
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #555;
+    }
+  </style>
+</head>
+<body class="bg-[var(--cream)] min-h-screen font-sans">
+
+  <aside class="w-64 bg-white border-r border-gray-200 fixed top-0 left-0 h-full flex flex-col items-center py-10 px-6">
+    <img src="assets/Photo_profile.jpg" alt="Foto Profil" class="w-24 h-24 rounded-full object-cover mb-4">
+    <h1 class="text-xl font-semibold text-[var(--brown)]">Meyta Zaskiya</h1>
+    <p class="text-sm text-gray-500 mb-6">UI/UX Designer | Web Developer</p>
+
+    <nav class="flex flex-col gap-3 w-full">
+      <a href="index.html" class="text-[var(--brown)] hover:font-bold">Home</a>
+      <a href="about.html" class="text-[var(--brown)] hover:font-bold">About</a>
+      <a href="services.html" class="text-[var(--brown)] hover:font-bold">Services</a>
+      <a href="portfolio.html" class="text-[var(--brown)] hover:font-bold">Portfolio</a>
+      <a href="contact.html" class="text-[var(--brown)] hover:font-bold">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="ml-[250px]">
+    <div class="about-container">
+      <div class="content">
+        <h2 class="text-4xl font-bold text-[var(--brown)] mb-4">About Me</h2>
+        <p class="text-gray-600 mb-6">I'm a passionate and detail-oriented UI/UX Designer and Web Developer with a background in Computer Science. I specialize in creating user-centered designs and intuitive web experiences that combine both functionality and aesthetics.</p>
+
+        <!-- Education, Skills, and Hobby Cards -->
+        <div class="card-container">
+          <!-- Education Card -->
+          <div class="card">
+            <div class="icon text-[var(--blue)]">
+              <span>&#128161;</span> <!-- Lightbulb icon -->
+            </div>
+            <h3>Education</h3>
+            <p>Universitas Lampung | 2023 – 2027<br>
+              Currently pursuing a Computer Science degree with a focus on UI/UX design, web development, and software engineering. Experienced in building web applications and designing user interfaces through both academic and personal projects.</p>
+          </div>
+
+          <!-- Skills Card -->
+          <div class="card">
+            <div class="icon text-[var(--red)]">
+              <span>&#128202;</span> <!-- Database icon -->
+            </div>
+            <h3>Skills</h3>
+            <p>Experienced in HTML, CSS, JavaScript, React, UI/UX Design, and Web Development.</p>
+          </div>
+
+          <!-- Hobby Card -->
+          <div class="card">
+            <div class="icon text-[var(--yellow)]">
+              <span>&#128241;</span> <!-- Phone icon -->
+            </div>
+            <h3>Hobby</h3>
+            <p>Enjoy exploring new technologies, photography, and traveling.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

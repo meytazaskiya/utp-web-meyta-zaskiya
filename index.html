@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --cream: #fdf6ec;
+      --brown: #7c4a2d;
+    }
+    
+    /* Ganti dengan path gambar yang benar, pastikan menggunakan forward slash */
+    body {
+      background-image: url('assets/iniaja.jpg'); /* Gunakan forward slash (/) */
+      background-size: cover; /* Agar gambar menutupi seluruh latar belakang */
+      background-position: center; /* Posisikan gambar di tengah */
+      background-attachment: fixed; /* Agar gambar tidak bergeser saat scroll */
+    }
+  </style>
+</head>
+<body class="flex min-h-screen font-sans">
+  <aside class="w-64 bg-white border-r border-gray-200 flex flex-col items-center py-10 px-6">
+    <img src="assets/Photo_profile.jpg" alt="Foto Profil" class="w-24 h-24 rounded-full object-cover mb-4">
+    <h1 class="text-xl font-semibold text-[var(--brown)]">Meyta Zaskiya</h1>
+    <p class="text-sm text-gray-500 mb-6">UI/UX Designer | Web Developer</p>
+
+    <nav class="flex flex-col gap-3 w-full">
+      <a href="index.html" class="text-[var(--brown)] hover:font-bold">Home</a>
+      <a href="about.html" class="text-[var(--brown)] hover:font-bold">About</a>
+      <a href="services.html" class="text-[var(--brown)] hover:font-bold">Services</a>
+      <a href="portfolio.html" class="text-[var(--brown)] hover:font-bold">Portfolio</a>
+      <a href="contact.html" class="text-[var(--brown)] hover:font-bold">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="flex-1 flex items-center justify-center p-10 bg-opacity-50 bg-white">
+    <div class="max-w-xl text-center">
+      <h2 class="text-4xl font-bold text-[var(--brown)] mb-4">Hi, I'm Meyta Zaskiya</h2>
+      <p class="text-gray-600 mb-6">Welcome to my portfolio. Here are some of the projects I’ve worked on:</p>
+      
+      <!-- My Project Button -->
+      <a href="portfolio.html">
+        <button class="px-6 py-2 bg-[var(--brown)] text-white rounded-lg hover:bg-brown-600 transition duration-300">
+          My Projects
+        </button>
+      </a>
+    </div>
+  </main>
+</body>
+</html>

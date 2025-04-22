@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --cream: #fdf6ec;
+      --brown: #7c4a2d;
+    }
+  </style>
+</head>
+<body class="flex bg-[var(--cream)] min-h-screen font-sans">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white border-r border-gray-200 flex flex-col items-center py-10 px-6">
+    <img src="assets/Photo_profile.jpg" alt="Foto Profil" class="w-24 h-24 rounded-full object-cover mb-4">
+    <h1 class="text-xl font-semibold text-[var(--brown)]">Meyta Zaskiya</h1>
+    <p class="text-sm text-gray-500 mb-6">UI/UX Designer | Web Developer</p>
+
+    <nav class="flex flex-col gap-3 w-full">
+      <a href="index.html" class="text-[var(--brown)] hover:font-bold">Home</a>
+      <a href="about.html" class="text-[var(--brown)] hover:font-bold">About</a>
+      <a href="services.html" class="text-[var(--brown)] hover:font-bold">Services</a>
+      <a href="portfolio.html" class="text-[var(--brown)] hover:font-bold">Portfolio</a>
+      <a href="contact.html" class="text-[var(--brown)] hover:font-bold">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col items-center justify-start p-10">
+    <div class="max-w-4xl w-full text-center mb-10">
+      <h2 class="text-4xl font-bold text-[var(--brown)] mb-4">Services</h2>
+      <p class="text-gray-600 mb-6">I offer a variety of services, including web design, UI/UX design, and front-end development.</p>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="w-12 h-12 mb-4 mx-auto bg-blue-500 text-white flex items-center justify-center rounded-full text-xl font-bold">⚡</div>
+        <h3 class="text-lg font-semibold text-[var(--brown)]">Innovative Ideas</h3>
+        <p class="text-sm text-gray-600 mt-2">Fresh and creative concepts for modern design solutions.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="w-12 h-12 mb-4 mx-auto bg-red-500 text-white flex items-center justify-center rounded-full text-xl font-bold">👤</div>
+        <h3 class="text-lg font-semibold text-[var(--brown)]">Software</h3>
+        <p class="text-sm text-gray-600 mt-2">Reliable, scalable, and custom-built software solutions.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="w-12 h-12 mb-4 mx-auto bg-yellow-500 text-white flex items-center justify-center rounded-full text-xl font-bold">🍃</div>
+        <h3 class="text-lg font-semibold text-[var(--brown)]">Application</h3>
+        <p class="text-sm text-gray-600 mt-2">Mobile and web apps that are user-friendly and fast.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="w-12 h-12 mb-4 mx-auto bg-purple-500 text-white flex items-center justify-center rounded-full text-xl font-bold">≡</div>
+        <h3 class="text-lg font-semibold text-[var(--brown)]">Graphic Design</h3>
+        <p class="text-sm text-gray-600 mt-2">Modern visual design for web, branding, and marketing.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="w-12 h-12 mb-4 mx-auto bg-green-500 text-white flex items-center justify-center rounded-full text-xl font-bold">📱</div>
+        <h3 class="text-lg font-semibold text-[var(--brown)]">UI/UX Design</h3>
+        <p class="text-sm text-gray-600 mt-2">Designing seamless and intuitive user experiences.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+        <div class="w-12 h-12 mb-4 mx-auto bg-pink-500 text-white flex items-center justify-center rounded-full text-xl font-bold">💼</div>
+        <h3 class="text-lg font-semibold text-[var(--brown)]">Consulting</h3>
+        <p class="text-sm text-gray-600 mt-2">Providing advice and strategies for your digital success.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

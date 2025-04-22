@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --cream: #fdf6ec;
+      --brown: #7c4a2d;
+    }
+  </style>
+</head>
+<body class="flex bg-[var(--cream)] min-h-screen font-sans">
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white border-r border-gray-200 flex flex-col items-center py-10 px-6">
+    <img src="assets/Photo_profile.jpg" alt="Foto Profil" class="w-24 h-24 rounded-full object-cover mb-4">
+    <h1 class="text-xl font-semibold text-[var(--brown)]">Meyta Zaskiya</h1>
+    <p class="text-sm text-gray-500 mb-6">UI/UX Designer | Web Developer</p>
+
+    <nav class="flex flex-col gap-3 w-full">
+      <a href="index.html" class="text-[var(--brown)] hover:font-bold">Home</a>
+      <a href="about.html" class="text-[var(--brown)] hover:font-bold">About</a>
+      <a href="services.html" class="text-[var(--brown)] hover:font-bold">Services</a>
+      <a href="portfolio.html" class="text-[var(--brown)] hover:font-bold">Portfolio</a>
+      <a href="contact.html" class="text-[var(--brown)] hover:font-bold">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex items-center justify-center p-10">
+    <div class="max-w-xl text-center">
+      <h2 class="text-4xl font-bold text-[var(--brown)] mb-4">My Portfolio</h2>
+      <p class="text-gray-600 mb-6">Here are some of the projects I've worked on:</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="assets/figma 1.jpg" alt="Project 1" class="w-full h-56 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-[var(--brown)]">Liftie Mobile</h3>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="assets/figma 2.jpg" alt="Project 2" class="w-full h-56 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-[var(--brown)]">Ilusart Mobile</h3>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="assets/figma 3.jpg" alt="Project 3" class="w-full h-56 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-[var(--brown)]">Hishoppers Mobile</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
